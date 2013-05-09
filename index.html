@@ -101,6 +101,13 @@ $redis_rails_cache = Redis.new host: 'ec2-yyy...', port: 6379, driver: :hiredis
 
 					<section>
 						<p>
+							App response time over 3 days.
+						</p>
+						<img src="images/3 - after split redis cache and availabilities - app response time.png">
+					</section>
+
+					<section>
+						<p>
 							Response time and throughput over 3 days.
 						</p>
 						<img src="images/3 - after split redis cache and availabilities - app response time and throughput.png">
@@ -113,20 +120,13 @@ $redis_rails_cache = Redis.new host: 'ec2-yyy...', port: 6379, driver: :hiredis
 						<img src="images/3 - after split redis cache and availabilities - CPU consumers.png">
 					</section>
 
-					<section>
-						<p>
-							App response time over 3 days.
-						</p>
-						<img src="images/3 - after split redis cache and availabilities - app response time.png">
-					</section>
-
 				</section>
 
 
 				<section>
 					<section data-state="alert">
 						<h2>Few weeks later</h2>
-						<h1>the return of Redis::Timeou<span style="color:red">tError</span></h1>
+						<h1>the return of the Redis::Timeou<span style="color:red">tError</span></h1>
 						<p>
 							Rails cache server CPU is overloaded
 						</p>
